@@ -1,3 +1,106 @@
-<p>
-  test works!
-</p>
+
+<div class="panel panel-default">
+
+	<div class="panel-heading">
+		Tip!
+	</div>
+
+	<div class="panel-body">
+		<div class="form-horizontal">
+
+			<div class="row">
+
+				<div class="col-sm-5">
+					<label class="col-sm-4 control-label noPadding" for="power">Hero Power</label>
+					<div class="col-sm-4">
+						<select class="form-control input-sm" id="power" required>
+							<option *ngFor="let pow of powers" [value]="pow">{{pow}}</option>
+						</select>
+					</div>	
+					<button  type="submit" class="btn btn-default btn-sm">My filters</button>
+				</div>
+
+				<div class="col-sm-7">
+					<label class="col-sm-2 control-label noPadding" for="power">Hero Power</label>
+					<div class="col-sm-4">
+						<select class="form-control input-sm" id="power" required>
+							<option *ngFor="let pow of powers" [value]="pow">{{pow}}</option>
+						</select>
+					</div>	
+
+					<label class="col-sm-1 control-label noPadding" for="time">from:</label>
+					<div class="col-sm-2">
+						<input type="text" class="form-control input-sm"  id="time" name="">
+					</div>
+
+
+					<label class="col-sm-1 control-label noPadding" for="time">to:</label>
+					<div class="row col-sm-2">
+						<input type="text" class="form-control input-sm"  id="time" name="">
+						<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+					</div>
+
+				</div>
+
+
+			</div>
+
+			<div class="form-group">
+
+				<label for="time">Select time</label>
+				<input type="text" class="form-control"  id="time" name="">
+			</div>
+			<div class="form-group	">
+
+				<label for="power">Hero Power</label>
+				<select class="form-control" id="power" required>
+					<option *ngFor="let pow of powers" [value]="pow">{{pow}}</option>
+				</select>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="panel panel-default">
+	
+	<div class="panel-body">
+		<form class="form-inline">
+			<div class="form-group">
+				<label for="exampleInputName2">Name</label>
+				<input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+				<button  type="submit" class="btn btn-default btn-sm">My filters</button>
+			</div>
+			<div class="form-group">
+				<label  for="power">Hero Power</label>
+				<select class="form-control input-sm" id="power" required>
+					<option *ngFor="let pow of powers" [value]="pow">{{pow}}</option>
+				</select>
+
+				<label  for="time">from:</label>
+				<input type="text" class="form-control input-sm"  id="time" name="">
+
+
+				<label  for="time">to:</label>
+				
+				<input type="text" class="form-control input-sm"  id="time" name="">
+				<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+			</div>
+			<!-- <button type="submit" class="btn btn-default">Send invitation</button> -->
+		</form>
+	</div>
+</div>
+
+
+<div class="panel panel-default">
+
+	<div class="panel-heading">
+		video
+	</div>
+
+	<div class="panel-body">
+		<video controls>
+			<!-- <source src="https://www.matheretter.de/test/ipad/video.mp4" type=""> -->
+		</video>
+	</div>
+</div>
